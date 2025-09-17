@@ -1,0 +1,30 @@
+# Build artifacts
+bin/
+obj/
+riderModule.iml
+/_ReSharper.Caches/
+
+# NuGet
+*.nupkg
+packages/
+
+# Secrets
+*.env
+secrets.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.json
+launchSettings.json
+
+# User files
+*.user
+*.suo
+.vs/
+.vscode/
+
+# Logs and OS junk
+*.log
+*.DS_Store
+Thumbs.db
+
+MigrationsCommands.txt
