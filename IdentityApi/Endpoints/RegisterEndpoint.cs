@@ -35,8 +35,13 @@ internal class RegisterEndpoint(
             return TypedResults.Problem(result.Problem);
         }
         var tokens = result.Value;
-        tokens.SetToHttpResponse(HttpContext.Response, environment.IsProduction());
-
-        return TypedResults.Redirect("http://127.0.0.1:5173/");
+        
+        tokens.SetToHttpResponse(HttpContext, environment.IsProduction());
+        
+        return TypedResults.Ok(new
+        {
+            message     = "Registration successful",
+            redirectUrl = "/"
+        });
     }
 }

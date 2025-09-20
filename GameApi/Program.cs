@@ -1,16 +1,25 @@
+using Core;
 using Core.Services;
 using Core.Services.Extensions;
 using GameApi.Data;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.DataProtection;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<GameDbContext>(options =>
+
+builder.Services.AddDatabaseConfiguration<GameDbContext>
+    (configuration.GetConnectionString("Default")!);
+
+builder.Services.AddAntiforgery(options =>
 {
-    options.UseNpgsql(configuration.GetConnectionString("Default"));
+    options.Cookie.Name         = Constants.Tokens.CSRF_TOKEN_COOKIE_NAME;
+    options.Cookie.SameSite     = SameSiteMode.Strict;
+    options.Cookie.HttpOnly     = false;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+    options.HeaderName          = Constants.Tokens.CSRF_TOKEN_HEADER_NAME;
 });
 builder.Services.AddOpenApi();
 
@@ -23,6 +32,10 @@ builder.Services.AddAuthorization();
 builder.Services.AddAuthorizationBuilder();
 
 builder.Services.AddCors(configuration, out string policyName);
+
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo(path: "../SharedKeys"))
+    .SetApplicationName("WebGameStats");
 
 var app = builder.Build();
 
@@ -37,6 +50,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseCors(policyName);
+app.UseAntiforgery();
 
 app.MapControllers();
 

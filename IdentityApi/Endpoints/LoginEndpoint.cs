@@ -2,6 +2,7 @@
 using FastEndpoints;
 using IdentityApi.Mapping;
 using IdentityApi.Services;
+using Microsoft.AspNetCore.Antiforgery;
 using LoginRequest = IdentityApi.Requests.LoginRequest;
 
 namespace IdentityApi.Endpoints;
@@ -10,7 +11,8 @@ internal class LoginEndpoint(
     ILoginService       loginService, 
     IWebHostEnvironment environment, 
     IHCaptchaService    hCaptchaService,
-    IIPAddressService   ipAddressService)
+    IIPAddressService   ipAddressService,
+    IAntiforgery        antiforgery)
     : Endpoint<LoginRequest, IResult>
 {
     public override void Configure()
@@ -35,8 +37,13 @@ internal class LoginEndpoint(
             return TypedResults.Problem(result.Problem);
         }
         var tokens = result.Value;
-        tokens.SetToHttpResponse(HttpContext.Response, environment.IsProduction());
+        tokens.SetToHttpResponse(HttpContext, environment.IsProduction());
         
-        return TypedResults.Ok("Login successful");
+        return TypedResults.Ok(new
+        {
+            message     = "Login successful",
+            csrfToken   = antiforgery.GetAndStoreTokens(HttpContext).RequestToken!,
+            redirectUrl = "/"
+        });
     }
 }

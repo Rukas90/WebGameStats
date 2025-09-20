@@ -16,6 +16,7 @@ internal class RefreshEndpoint(
     {
         Post(routePatterns: "/v1/auth/session/refresh");
         AllowAnonymous();
+        EnableAntiforgery();
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {
@@ -33,7 +34,11 @@ internal class RefreshEndpoint(
             return TypedResults.Problem(validation.Problem);
         }
         await GenerateNewTokens(refreshToken!.User);
-        return TypedResults.Ok("Tokens refreshed successfully.");
+        
+        return TypedResults.Ok(new
+        {
+            message = "Refresh successful", 
+        });
     }
     private async Task GenerateNewTokens(User user)
     {
@@ -41,7 +46,7 @@ internal class RefreshEndpoint(
             AccessToken:  await jwtService.Generate(user),
             RefreshToken: await refreshTokenService.CreateAsync(user));
         
-        result.SetToHttpResponse(HttpContext.Response, environment.IsProduction());
+        result.SetToHttpResponse(HttpContext, environment.IsProduction());
     }
     private async Task<Result<RefreshToken>> ValidateRefreshToken(RefreshToken? refreshToken)
     {

@@ -2,6 +2,7 @@
 using Core.Security;
 using GameApi.Requests.Score;
 using GameApi.Services.Score;
+using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,12 +10,14 @@ namespace GameApi.Endpoints;
 
 [ApiController]
 [Route("v1/profile")]
-public class ProfileController(IScoreService scoreService) : ControllerBase
+public class ProfileController(IScoreService scoreService, IAntiforgery antiforgery) : ControllerBase
 {
     [Authorize]
     [HttpPost("score")]
     public async Task<IActionResult> UpdateScore([FromBody] ScoreUpdateRequest request)
     {
+        await antiforgery.ValidateRequestAsync(HttpContext);
+        
         var idResult = JwtReader.GetUserId(User);
         
         if (idResult.IsFailure)

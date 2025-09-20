@@ -4,7 +4,7 @@ namespace Core.Config.Cookies;
 
 public static class CookiesConfiguration
 {
-    public static CookieOptions GetSecureCookieOptions(TimeSpan maxAge, bool isProduction) 
+    public static CookieOptions GetSecureCookieOptionsHttpOnly(TimeSpan maxAge, bool isProduction) 
         => new()
         {
             HttpOnly    = true,

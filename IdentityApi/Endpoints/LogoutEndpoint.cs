@@ -9,7 +9,7 @@ internal class LogoutEndpoint(IRefreshTokenService refreshTokenService)
     public override void Configure()
     {
         Post("/v1/auth/logout");
-        AllowAnonymous();
+        EnableAntiforgery();
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {
@@ -17,6 +17,7 @@ internal class LogoutEndpoint(IRefreshTokenService refreshTokenService)
         
         HttpContext.Response.Cookies.Delete(Constants.Tokens.ACCESS_TOKEN_COOKIE_NAME);
         HttpContext.Response.Cookies.Delete(Constants.Tokens.REFRESH_TOKEN_COOKIE_NAME);
+        HttpContext.Response.Cookies.Delete(Constants.Tokens.CSRF_TOKEN_COOKIE_NAME);
         
         return TypedResults.Ok(new
         {
