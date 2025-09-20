@@ -28,7 +28,6 @@ builder.Services.AddJwtAuthentication(configuration);
 
 builder.Services.AddAppServices<Program>();
 
-builder.Services.AddAuthorization();
 builder.Services.AddAuthorizationBuilder();
 
 builder.Services.AddCors(configuration, out string policyName);

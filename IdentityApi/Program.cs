@@ -29,7 +29,6 @@ builder.Services.AddOpenApi();
 builder.Services.ExtendProblemDetails();
 builder.Services.AddJwtAuthentication(configuration);
 
-builder.Services.AddAuthorization();
 builder.Services.AddAuthorizationBuilder();
 
 builder.Services.Configure<HCaptchaSettings>(
