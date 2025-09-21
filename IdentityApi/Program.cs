@@ -1,5 +1,6 @@
 using Core;
 using Core.Data;
+using Core.Middleware;
 using Core.Services;
 using Core.Services.Extensions;
 using FastEndpoints;
@@ -54,29 +55,9 @@ builder.Services.AddDataProtection()
 
 var app = builder.Build();
 
-app.Use(async (context, next) =>
-{
-    Console.WriteLine($"=== Incoming Request ===");
-    Console.WriteLine($"Method: {context.Request.Method}");
-    Console.WriteLine($"Path: {context.Request.Path}");
-    Console.WriteLine($"QueryString: {context.Request.QueryString}");
-    Console.WriteLine($"ContentType: {context.Request.ContentType}");
-    Console.WriteLine($"Headers: {string.Join(", ", context.Request.Headers.Select(h => $"{h.Key}={h.Value}"))}");
-    
-    if (context.Request.ContentLength > 0)
-    {
-        context.Request.EnableBuffering();
-        var body = await new StreamReader(context.Request.Body).ReadToEndAsync();
-        context.Request.Body.Position = 0;
-        Console.WriteLine($"Body: {body}");
-    }
-    Console.WriteLine("========================");
-    
-    await next();
-});
-
 if (app.Environment.IsDevelopment())
 {
+    app.UseIncomingRequestLogger();
     app.MapOpenApi();
     app.MapScalarApiReference();
 }

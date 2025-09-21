@@ -1,4 +1,5 @@
 using Core;
+using Core.Middleware;
 using Core.Services;
 using Core.Services.Extensions;
 using GameApi.Data;
@@ -40,6 +41,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+    app.UseIncomingRequestLogger();
     app.MapOpenApi();
     app.MapScalarApiReference();
 }

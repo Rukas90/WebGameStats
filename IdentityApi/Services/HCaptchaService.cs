@@ -53,19 +53,13 @@ internal class HCaptchaService(
             
             var content  = new FormUrlEncodedContent(parameters);
             var response = await httpClient.PostAsync(configuration["HCaptcha:VerificationUrl"], content);
-
-            Console.WriteLine(JsonSerializer.Serialize(response));
             
             if (!response.IsSuccessStatusCode)
             {
                 return false;
             }
-            Console.WriteLine("----------------------------------------------------");
-            
             var jsonResponse = await response.Content.ReadAsStringAsync();
             var result = JsonSerializer.Deserialize<HCaptchaVerificationResponse>(jsonResponse);
-
-            Console.WriteLine(JsonSerializer.Serialize(result));
             
             return result?.Success == true;
         }
