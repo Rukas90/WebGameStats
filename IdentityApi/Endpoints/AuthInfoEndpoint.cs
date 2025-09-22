@@ -28,7 +28,8 @@ internal class AuthInfoEndpoint(
             var profileResult = userService.GetProfileFromPrincipal(User);
             profile = profileResult.IsSuccess ? profileResult.Value : null;
         }
-        return Task.FromResult<IResult>(TypedResults.Ok(new AuthInfoResponse
+        return Task.FromResult<IResult>(TypedResults.Ok(
+            new AuthInfoResponse
         {
             Status  = authStatus,
             Profile = profile

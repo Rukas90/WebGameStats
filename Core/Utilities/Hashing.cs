@@ -9,7 +9,7 @@ public struct HashRules
     public int               Iterations { get; init; }
     public HashAlgorithmName Algorithm  { get; init; }
 }
-public class Hashing
+public static class Hashing
 {
     public static HashRules DefaultSHA256Rules => new()
     {

@@ -12,7 +12,7 @@ var configuration = builder.Configuration;
 builder.Services.AddControllers();
 
 builder.Services.AddDatabaseConfiguration<GameDbContext>
-    (configuration.GetConnectionString("Default")!);
+    (configuration.GetConnectionString("mkdb")!);
 
 builder.Services.AddAntiforgery(options =>
 {

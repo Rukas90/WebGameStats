@@ -9,7 +9,10 @@ using IdentityApi.Models;
 using IdentityApi.Services;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Scalar.AspNetCore;
+using ZiggyCreatures.Caching.Fusion;
+using ZiggyCreatures.Caching.Fusion.Serialization.SystemTextJson;
 
 var builder       = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -32,14 +35,23 @@ builder.Services.AddJwtAuthentication(configuration);
 
 builder.Services.AddAuthorizationBuilder();
 
-builder.Services.Configure<HCaptchaSettings>(
-    builder.Configuration.GetSection("HCaptcha"));
+builder.Services.AddFusionCache()
+    .WithDefaultEntryOptions(options =>
+    {
+        options.Duration          = TimeSpan.FromMinutes(10);
+        options.IsFailSafeEnabled = true;
+    })
+    .WithSerializer(new FusionCacheSystemTextJsonSerializer())
+    .WithDistributedCache(new RedisCache(new RedisCacheOptions { Configuration = configuration["Redis:Configuration"] }));
 
 builder.Services.AddAppServices<Program>();
+
+builder.Services.Configure<HCaptchaSettings>(
+    builder.Configuration.GetSection("HCaptcha"));
 builder.Services.AddHttpClient<HCaptchaService>();
 
 builder.Services.AddDatabaseConfiguration<UserDbContext>
-    (configuration.GetConnectionString("Default")!);
+    (configuration.GetConnectionString("mkdb")!);
 
 builder.Services.AddIdentityCore<User>()
     .AddRoles<UserRole>()

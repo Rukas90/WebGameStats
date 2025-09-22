@@ -69,7 +69,6 @@ internal class HCaptchaService(
             return false;
         }
     }
-
     private static void AppendRemoteIp(string? userIP, in List<KeyValuePair<string, string>> parameters)
     {
         const string GOOGLE_PUBLIC_DNS = "8.8.8.8";

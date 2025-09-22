@@ -115,10 +115,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5158f096a230a475fead7d5416aaff6ad475599f87c8a6e127e7bb91c0c5d4e1/LinkGeneratorEndpointNameAddressExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5193ddcc14a4d92251c449112fcdfbb6bfbaa7c61db3c48831c2d54831fddf/SignInManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/52a0609025e1148fb68bef44e0d7314cbea567f41ef97e28b37be14479b78f1/HttpServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/553c104ee9ff983a712e54a7b1256cd16bebcfb39fd6e4789f00601a55f5cc/FusionCacheExtMethods_FactoryNoCtx_Sync.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5557cd304ec08fa0151dc3782aace87aacca4b2105c62752d992c3b94dc1fe/HttpValidationProblemDetails.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/563d3988d26ded4f8cb217227c9b807eec6c346745e79a326d33cbb4de376/EmailAddressAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/59cd7a17e4fcffda1ba3687b386939b4e155ba482f85c8fe9993bc8373d7f93/ApiBehaviorApplicationModelProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5b4322fbe87a391bc1635b1b2c616c318d165a8fccda29682a5e99529b380/OkOfT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/60e16123dbae4c75961b99e3f63e7d8de8d1ddd13e7820a1236131ea3a6fd79/FusionCacheExtMethods_FactoryWithCtx_Sync.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/65cfb6c949e5fefc17badd7a981c3822fddc68802fdca4cac4f69c86a7b1382/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/682c82217cf64e09148df3cf2861f4a8594e79ec6c51024c45d55c243c9d5ce/Endpoint.Base.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6fa05d7dbf2e454ce78b261b422234da1f1ccedee678fd997e5ef4afe6df6e/ControllerBase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -145,6 +147,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a130be5ee1badae13d8f097cda6d5e22b6749b9bfe4adb9193c9c9083b85c3/AccessTokenResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a32d9cd8363f7aae5eddd7154d8821b8efcbcfc31f215eb3fb4c7edb7c2dfe/Endpoint.Properties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a49b8ce94f30cc539f63495270c8aface17e51be26995e99cd6c814274ff68/AntiforgeryMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/acb03f53af4425c45c5f8c16a856a23a547f5968fde73f66ae20a981437c94/FusionCacheFactoryExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ae61cca2772ca119c4c1cdd75d19352efda95ef5f6d1f806cb343484277e1e7/Endpoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b57427c37fcbd61dde2a6082502b8b1ac5124dafef4895130b269fa121bf5a/DefaultValidatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b741f17422844062bda644589ab84b32337fefcb677bc51957a62c3df8ad4d/AuthorizationAppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -227,7 +230,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.IdentityApi:http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.GameApi:http">
     <configuration name="Testing" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -356,7 +359,7 @@
       <workItem from="1757314892077" duration="50295000" />
       <workItem from="1757678736790" duration="338000" />
       <workItem from="1757679128133" duration="27214000" />
-      <workItem from="1758115702415" duration="61958000" />
+      <workItem from="1758115702415" duration="76873000" />
     </task>
     <servers />
   </component>

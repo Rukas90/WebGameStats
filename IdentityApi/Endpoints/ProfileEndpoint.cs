@@ -1,4 +1,5 @@
 ﻿using FastEndpoints;
+using IdentityApi.Responses;
 using IdentityApi.Services;
 
 namespace IdentityApi.Endpoints;
@@ -10,10 +11,11 @@ internal class ProfileEndpoint(IUserService userService)
     {
         Get("/v1/users/profile");
     }
-    public override async Task<IResult> ExecuteAsync(CancellationToken ct)
+    public override Task<IResult> ExecuteAsync(CancellationToken ct)
     {
-        return userService.GetProfileFromPrincipal(User).Match<IResult>(
-            onSuccess: TypedResults.Ok,
-            onFailure: TypedResults.Problem);
+        return Task.FromResult(userService.GetProfileFromPrincipal(User)
+            .Match<IResult>(
+            onSuccess: TypedResults.Ok<ProfileResponse>,
+            onFailure: TypedResults.Problem));
     }
 }
