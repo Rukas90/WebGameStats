@@ -19,7 +19,7 @@ internal class UserService(IUserRepository repository)
 {
     public async Task<Result<ProfileMetadata>> GetUserProfileAsync(Guid userId)
     {
-        var user = await repository.GetById(userId);
+        var user = await repository.GetByIdAsync(userId);
 
         if (user == null)
         {

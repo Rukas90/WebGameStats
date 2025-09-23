@@ -2,9 +2,9 @@
 
 namespace Core.Results;
 
-public readonly struct Empty
+public readonly struct NoContent
 {
-    public static readonly Empty Value = new();
+    public static readonly NoContent Value = new();
 }
 public readonly record struct Result<TValue>
 {

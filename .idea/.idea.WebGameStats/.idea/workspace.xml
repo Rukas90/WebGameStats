@@ -128,6 +128,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76bb40a658eadce1eaa3283f4a21f651f45bc2c4c9a2e8b48ebe5817fc4628/IdentityEntityFrameworkBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76d4427cd5623d878123796979f86bb772886627ecf9a579e2b61debbd43c2c/SHA256.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/79b4b5d07e8c5ac3de172b75667c6bded8e1fa6f42f36d8f6dc2f9e3d568/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7cd5c2b34129c679757d73774749838069732e89a78ac285d916b7bb4df98c16/IdentityResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d382df578ec93391918cfaa4ce7f4b8f35c9aed1241d6556dc9be26df13c/IdentityUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8296d36b22e8e614991e465edb588fca157e717308a2de59bee96d709212f8/MiddlewareExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83e72561796643cd854f9650d6f2630bf1e1aa55e743b15b6576ba85b2ee324/ValidationProblemDetails.cs" root0="SKIP_HIGHLIGHTING" />
@@ -212,7 +213,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.42537314&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -359,7 +360,7 @@
       <workItem from="1757314892077" duration="50295000" />
       <workItem from="1757678736790" duration="338000" />
       <workItem from="1757679128133" duration="27214000" />
-      <workItem from="1758115702415" duration="76873000" />
+      <workItem from="1758115702415" duration="86494000" />
     </task>
     <servers />
   </component>

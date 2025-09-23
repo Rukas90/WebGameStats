@@ -1,12 +1,10 @@
 ﻿using System.Security.Claims;
 using System.Security.Cryptography;
 using Core;
-using Core.Data;
 using Core.Services;
 using Core.Utilities;
 using IdentityApi.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using IdentityApi.Services;
 
 namespace IdentityApi;
 
@@ -28,8 +26,8 @@ internal enum RefreshTokenValidationStatus
 }
 [AppService<IRefreshTokenService>]
 internal class RefreshTokenService(
-        UserDbContext userDbContext,
-        UserManager<User> userManager) : IRefreshTokenService
+        IUserRepository userRepository,
+        IAccountService accountService) : IRefreshTokenService
 {
     public async Task<string> CreateAsync(User user)
     {
@@ -46,30 +44,28 @@ internal class RefreshTokenService(
             Revoked   = false,
             User      = user
         };
-        await userDbContext.RefreshTokens.AddAsync(newToken);
-        await userDbContext.SaveChangesAsync();
+        await userRepository.AddRefreshTokenAsync(newToken);
+        await userRepository.SaveChangesAsync();
 
         return token;
     }
     public async Task RevokeUserTokensAsync(ClaimsPrincipal principal)
     {
-        var user = await userManager.GetUserAsync(principal);
-        if (user is null)
+        var result = await accountService.GetUserAsync(principal);
+        if (result.IsFailure)
         {
             return;
         }
-        await RevokeUserTokensAsync(user);
+        await RevokeUserTokensAsync(result.Value);
     }
     public async Task RevokeUserTokensAsync(User user)
     {
-        await userDbContext.RefreshTokens
-            .Where(token => token.UserId == user.Id)
-            .ExecuteDeleteAsync();
+        await userRepository.DeleteUserRefreshTokensAsync(user);
     }
     public async Task<RefreshToken> RevokeTokenAsync(RefreshToken refreshToken)
     {
         refreshToken.Revoked = true;
-        await userDbContext.SaveChangesAsync();
+        await userRepository.SaveChangesAsync();
         return refreshToken;
     }
     public async Task<RefreshTokenValidationStatus> ValidateToken(string tokenValue)
@@ -94,10 +90,8 @@ internal class RefreshTokenService(
     }
     public async Task<RefreshToken?> GetTokenAsync(string token)
     {
-        var tokenHash = Hashing.Hash(token, Hashing.DefaultSHA256Rules);
-        return await userDbContext.RefreshTokens
-            .Include(refreshToken => refreshToken.User)
-            .FirstOrDefaultAsync(refreshToken => refreshToken.TokenHash == tokenHash);
+        return await userRepository.GetRefreshTokenAsync(
+            Hashing.Hash(token, Hashing.DefaultSHA256Rules));
     }
     private static string GenerateRandomToken(int size = 32)
     {

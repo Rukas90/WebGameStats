@@ -17,7 +17,7 @@ internal interface IRegistrationService
 }
 [AppService<IRegistrationService>]
 internal class RegistrationService(
-    UserManager<User>         userManager,
+    IAccountService           accountService,
     IUserStore<User>          userStore,
     IEmailConfirmationService emailConfirmation,
     IJwtService               jwtService,
@@ -27,10 +27,6 @@ internal class RegistrationService(
     public async Task<Result<TokensPairResponse>> RegisterAsync(
         RegisterCommand command, HttpContext context, CancellationToken cancellationToken)
     {
-        if (!userManager.SupportsUserEmail)
-        {
-            throw new NotSupportedException("Requires a user store with email support.");
-        }
         var email = command.Email;
         var emailStore = (IUserEmailStore<User>)userStore;
         var user       = new User();
@@ -40,11 +36,11 @@ internal class RegistrationService(
         
         cancellationToken.ThrowIfCancellationRequested();
         
-        var result = await userManager.CreateAsync(user, command.Password);
+        var result = await accountService.CreateUserAsync(user, command.Password);
         
-        if (!result.Succeeded)
+        if (!result.IsFailure)
         {
-            return Failure.Error(result);
+            return result.Problem;
         }
         await rolesService.AddRoleToUserAsync(user, Constants.Roles.GUEST, cancellationToken);
         await emailConfirmation.SendConfirmationEmailAsync(user, context);

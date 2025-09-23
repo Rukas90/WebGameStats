@@ -3,8 +3,7 @@ using Core.Services;
 using IdentityApi;
 using IdentityApi.Commands;
 using IdentityApi.Responses;
-using IdentityApi.Models;
-using Microsoft.AspNetCore.Identity;
+using IdentityApi.Services;
 
 namespace Api.Services;
 
@@ -15,7 +14,7 @@ internal interface ILoginService
 }
 [AppService<ILoginService>]
 internal class LoginService(
-    UserManager<User>    userManager,
+    IAccountService      accountService,
     IJwtService          jwtService,
     IRefreshTokenService refreshTokenService) : ILoginService
 {
@@ -37,19 +36,20 @@ internal class LoginService(
     }
     private async Task<UserAuthValidationResult> ValidateAuthentication(LoginCommand command)
     {
-        var user = await userManager.FindByEmailAsync(command.Email);
+        var result = await accountService.GetByEmailAsync(command.Email);
         
-        if (user is null)
+        if (result.IsFailure)
         {
             return Failure.BadRequest("Invalid credentials");
         }
-        var validPassword = await userManager.CheckPasswordAsync(user, command.Password);
+        var user = result.Value;
+        var validPassword = await accountService.CheckPasswordAsync(user, command.Password);
         
         if (!validPassword)
         {
             return Failure.BadRequest("Invalid credentials");
         }
-        if (!await userManager.GetTwoFactorEnabledAsync(user))
+        if (!await accountService.GetTwoFactorEnabledAsync(user))
         {
             return UserAuthValidationResult.Success(user);
         }

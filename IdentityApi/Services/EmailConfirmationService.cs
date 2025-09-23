@@ -20,7 +20,7 @@ internal interface IEmailConfirmationService
 }
 [AppService<IEmailConfirmationService>]
 internal class EmailConfirmationService(
-    UserManager<User>   userManager,
+    IAccountService     accountService,
     IEmailSenderService senderService,
     IRolesService       rolesService) : IEmailConfirmationService
 {
@@ -31,12 +31,14 @@ internal class EmailConfirmationService(
         {
             return Failure.Unauthorized(message: "Code is invalid!");
         }
-        var user = await userManager.FindByIdAsync(userId.ToString());
+        var userResult = await accountService.GetByIdAsync(userId);
         
-        if (user is null)
+        if (userResult.IsFailure)
         {
             return Failure.Unauthorized(message: "User not found!");
         }
+        var user = userResult.Value;
+        
         try
         {
             code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
@@ -47,9 +49,7 @@ internal class EmailConfirmationService(
         }
         cancellationToken.ThrowIfCancellationRequested();
         
-        IdentityResult result = await userManager.ConfirmEmailAsync(user, code);
-        
-        if (!result.Succeeded)
+        if ((await accountService.ConfirmEmailAsync(user, code)).IsFailure)
         {
             return Failure.Unauthorized(message: "Code is invalid!");
         }
@@ -60,7 +60,7 @@ internal class EmailConfirmationService(
     }
     public async Task SendConfirmationEmailAsync(User user, HttpContext context)
     {
-        var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
+        var code = await accountService.GenerateEmailConfirmationTokenAsync(user);
         code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
         
         var url = new UriBuilder

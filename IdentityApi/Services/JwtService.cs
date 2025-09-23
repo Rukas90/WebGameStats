@@ -4,6 +4,7 @@ using Core;
 using Core.Config.Jwt;
 using IdentityApi.Models;
 using Core.Services;
+using IdentityApi.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using ZiggyCreatures.Caching.Fusion;
@@ -18,7 +19,7 @@ internal interface IJwtService
 [AppService<IJwtService>]
 internal class JwtService(
     IConfiguration    configuration, 
-    UserManager<User> userManager,
+    IAccountService   accountService,
     IFusionCache      cache) : IJwtService
 {
     private static readonly TimeSpan TOKEN_EXPIRATION_TIME 
@@ -26,10 +27,8 @@ internal class JwtService(
     
     public async Task<string> Generate(User user)
     {
-        var userClaims = await userManager.GetClaimsAsync(user);
-        var userRoles = await cache.GetOrSetAsync<IList<string>>(
-            key:     $"UserRoles:{user.Id}",
-            factory: async _ => await userManager.GetRolesAsync(user));
+        var userClaims = await accountService.GetClaimsAsync(user);
+        var userRoles = await accountService.GetRolesAsync(user);
         
         var claims = GetClaims(user);
         

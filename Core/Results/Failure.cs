@@ -21,6 +21,20 @@ public static class Failure
             Status = StatusCodes.Status400BadRequest
         };
     
+    public static ValidationProblemDetails Error(IEnumerable<IdentityError> errors)
+    {
+        var errorDict = new Dictionary<string, string[]>
+        {
+            ["Identity"] = errors.Select(e => e.Description).ToArray()
+        };
+        return new ValidationProblemDetails(errorDict)
+        {
+            Title  = "Identity Operation Failed",
+            Detail = "One or more identity-related errors occurred.",
+            Status = StatusCodes.Status400BadRequest
+        };
+    }
+    
     public static ValidationProblemDetails ValidationProblem(IEnumerable<ValidationFailure> failures) 
         => new(FormatValidationErrors(failures))
         {

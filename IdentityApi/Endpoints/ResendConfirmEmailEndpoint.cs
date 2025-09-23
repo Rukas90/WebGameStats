@@ -1,13 +1,12 @@
 ﻿using Api.Services;
-using IdentityApi.Models;
 using FastEndpoints;
-using Microsoft.AspNetCore.Identity;
+using IdentityApi.Services;
 
 namespace IdentityApi.Endpoints;
 
 internal class ResendConfirmEmailEndpoint(
     IEmailConfirmationService emailConfirmationService,
-    UserManager<User> userManager) 
+    IAccountService accountService) 
     : EndpointWithoutRequest<IResult>
 {
     public override void Configure()
@@ -17,12 +16,14 @@ internal class ResendConfirmEmailEndpoint(
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {
-        var user = await userManager.GetUserAsync(User);
+        var result = await accountService.GetUserAsync(User);
 
-        if (user == null)
+        if (result.IsFailure)
         {
             return TypedResults.Problem(detail: "Failed to find user.");
         }
+        var user = result.Value;
+        
         await emailConfirmationService
             .SendConfirmationEmailAsync(user, HttpContext);
 
