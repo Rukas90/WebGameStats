@@ -5,9 +5,7 @@ using Core.Config.Jwt;
 using IdentityApi.Models;
 using Core.Services;
 using IdentityApi.Services;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using ZiggyCreatures.Caching.Fusion;
 
 namespace IdentityApi;
 
@@ -18,9 +16,8 @@ internal interface IJwtService
 }
 [AppService<IJwtService>]
 internal class JwtService(
-    IConfiguration    configuration, 
-    IAccountService   accountService,
-    IFusionCache      cache) : IJwtService
+    IConfiguration  configuration, 
+    IAccountService accountService) : IJwtService
 {
     private static readonly TimeSpan TOKEN_EXPIRATION_TIME 
         = TimeSpan.FromHours(1);
