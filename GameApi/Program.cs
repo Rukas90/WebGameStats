@@ -55,6 +55,8 @@ app.UseAntiforgery();
 
 app.MapControllers();
 
+app.MapGet("/v1/ping", () => Results.Ok("pong"));
+
 if (app.Environment.IsDevelopment())
 {
     await app.RunAsync(configuration["Server:Url"]);
