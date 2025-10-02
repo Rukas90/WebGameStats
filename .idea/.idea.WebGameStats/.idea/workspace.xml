@@ -13,8 +13,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/publish/BenjaminAbt.HCaptcha.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/BouncyCastle.Cryptography.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Core.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/DotNext.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/FastEndpoints.Attributes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/FastEndpoints.Messaging.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/FastEndpoints.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/FluentResults.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/FluentValidation.DependencyInjectionExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/FluentValidation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.staticwebassets.endpoints.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/LanguageExt.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/MailKit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Authentication.Google.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.OpenApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Caching.StackExchangeRedis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Microsoft.OpenApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/MimeKit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Npgsql.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Pipelines.Sockets.Unofficial.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Refit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Scalar.AspNetCore.Microsoft.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/Scalar.AspNetCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/SoftFluent.EntityFrameworkCore.DataEncryption.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/StackExchange.Redis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/System.IO.Hashing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/ZiggyCreatures.FusionCache.Serialization.SystemTextJson.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/ZiggyCreatures.FusionCache.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish/web.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -356,7 +420,7 @@
       <workItem from="1759249649898" duration="446000" />
       <workItem from="1759254488969" duration="368000" />
       <workItem from="1759414115046" duration="631000" />
-      <workItem from="1759415939623" duration="9890000" />
+      <workItem from="1759415939623" duration="10661000" />
     </task>
     <servers />
   </component>

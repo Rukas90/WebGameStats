@@ -88,8 +88,6 @@ app.MapGet("/v1/identity/ping", () => Results.Ok("pong"));
 if (app.Environment.IsDevelopment())
 {
     await app.RunAsync(configuration["Server:Url"]);
+    return;
 }
-else
-{
-    await app.RunAsync();
-}
+await app.RunAsync();
