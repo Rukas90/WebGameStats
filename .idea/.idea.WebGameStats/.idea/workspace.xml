@@ -13,26 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/publish.7z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Utilities/MathUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testing/ScoreIntegrationTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testing/ScoreUnitTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Results/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Results/Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Utilities/AppService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Utilities/AppService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Data/GameDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Data/GameDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Models/Highscore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Models/Highscore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Score/Dto/ScoreUpdateRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Score/Dto/ScoreUpdatedResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Score/Endpoints/ProfileController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Score/Services/ScoreService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Data/UserDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Data/UserDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Models/RefreshToken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Models/RefreshToken.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Models/UserRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Models/UserRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/RolesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/RolesService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTesting/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTesting/UnitTesting.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTesting/UnitTesting.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/GameApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/GameApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/Score/ScoreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Score/ScoreRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/Score/ScoreService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Score/ScoreService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTesting/ScoreTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTesting/UnitTesting.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Testing.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebGameStats.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebGameStats.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +82,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1622b8f95d27187bc1fb39bac49bd64e928773df4fda6fcf6271680be54a2/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1db095945646f1a37caa3b47b68d91881327b577fe8ae64ca80c90ab658d83/EndpointAntiforgeryStateProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1ea0722f8c9bbaab3e5d465d364dd217a3f22b5bc092643f8263eedcc1f68/ValidationResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f7d81c92c01349f8e68213d932e21041fa2083dc3c66e37a976b86d247666/ShouldBeBooleanExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23d24839d9b96d651f3e31225eeec7416b9ec2ede234e6d0f28da4d0f8d/JwtBearerExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24116c9a39d9274a98c16b9083d086948f901ce1289686d8da7a3886b19833f2/IdentityServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24dd1164ba47541cb1d3eb011e638e16953dbea3ae3f4dc208c3bbf3e96298a/ServiceCollectionServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -102,7 +92,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/25c17a5694af3e1179e68d84db415db2726312cb8882d79b324f908bec83c52e/HttpContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/25eff0c6e61fa78668cfab4bedf57b35564a0231cb9fa3e750ecc38ffe78/ActionResultOfT.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2a85d5d3aef643b4f58a2ce2e7ed195f54a749954147ea3f69b3df1a683d78/IReason.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2defb41d87a48ff143adc586b639ba3a80759c1971fd26591e7d4249a31b7c/ReturnsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/31bd529046b0242873fa335ecf625f99bd726381bca73f8bf96781fbf6de/EndpointDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/337268366a89be4dda7d47b37063fd21841972237539397997c82c4f924b/Mock`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3481227da5406d26351d395b63b19b9f97363eb8debbbfedfdd4c6447ea62a1/StatusCodeResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3520bf5c151bbc5aed94ba6abea697eaaee2b96fe96341613fef02be1cc54/ValidationFailure.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b23a4d1d07ad4fc894e1a2cf42c3cf4fb40afe23bd7f1fa3d629ce41dc322f1/Results.cs" root0="FORCE_HIGHLIGHTING" />
@@ -132,6 +124,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d382df578ec93391918cfaa4ce7f4b8f35c9aed1241d6556dc9be26df13c/IdentityUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8296d36b22e8e614991e465edb588fca157e717308a2de59bee96d709212f8/MiddlewareExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83e72561796643cd854f9650d6f2630bf1e1aa55e743b15b6576ba85b2ee324/ValidationProblemDetails.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83f3959e20d0785c3fa5d87b307c4d4db562aea7947c46644fd16367df8d/Mock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/867bdde674cefddad7c5552c7b15a72f9b6512445394896e5053e46c6f9f5/ShouldAssertException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8789586b575d44528c2aa18853f6eb96f3e8f8d3f4fa7eb9d6a56b54b49d7/Task.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8ad19b245ad6dabd12b86149cac318101f3ebf48af7c230f471b78efb515/EndpointData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8baf96cec65b47cec6347cbe60f7f45982b65815878eddb2905c8610beb820bc/EmailValidator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -180,7 +174,12 @@
     <setting file="file://$PROJECT_DIR$/IdentityApi/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IdentityApi/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IdentityApi/Services/JwtService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Testing/ScoreUnitTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -196,41 +195,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Api: https.executor": "Run",
-    ".NET Launch Settings Profile.Api:http.executor": "Debug",
-    ".NET Launch Settings Profile.GameApi: http.executor": "Debug",
-    ".NET Launch Settings Profile.GameApi:http.executor": "Debug",
-    ".NET Launch Settings Profile.IdentityApi:http.executor": "Debug",
-    ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
-    ".NET Project.Testing.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.42537314",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2025.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Api: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Api:http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.GameApi: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.GameApi:http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.IdentityApi:http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Testing.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.42537314&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\JetBrains Rider 2025.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "sqlserver",
-      "sqlserver.localdb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;sqlserver&quot;,
+      &quot;sqlserver.localdb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.GameApi:http">
     <configuration name="Testing" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -361,6 +360,10 @@
       <workItem from="1757678736790" duration="338000" />
       <workItem from="1757679128133" duration="27214000" />
       <workItem from="1758115702415" duration="86494000" />
+      <workItem from="1759249649898" duration="446000" />
+      <workItem from="1759254488969" duration="368000" />
+      <workItem from="1759414115046" duration="631000" />
+      <workItem from="1759415939623" duration="3121000" />
     </task>
     <servers />
   </component>
