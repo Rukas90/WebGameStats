@@ -70,9 +70,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseIncomingRequestLogger();
-    app.MapOpenApi();
-    app.MapScalarApiReference();
 }
+app.MapOpenApi();
+app.MapScalarApiReference();
+
 app.UseHttpsRedirection();
 app.UseCors(policyName);
 
@@ -81,6 +82,8 @@ app.UseAuthorization();
 
 app.UseAntiforgeryFE();
 app.UseFastEndpoints();
+
+app.MapGet("/v1/ping", () => Results.Ok("pong"));
 
 if (app.Environment.IsDevelopment())
 {

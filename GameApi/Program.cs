@@ -42,9 +42,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseIncomingRequestLogger();
-    app.MapOpenApi();
-    app.MapScalarApiReference();
 }
+app.MapOpenApi();
+app.MapScalarApiReference();
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
