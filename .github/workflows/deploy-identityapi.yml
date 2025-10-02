@@ -1,0 +1,27 @@
+name: Deploy IdentityApi
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.x'
+
+      - name: Publish IdentityApi
+        run: dotnet publish ./IdentityApi/IdentityApi.csproj -c Release -o ./publish
+
+      - name: Deploy to Azure
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'QuizGameStats'
+          slot-name: 'Production'
+          package: ./publish
+          publish-profile: ${{ secrets.IDENTITYAPI_PUBLISH_PROFILE }}
