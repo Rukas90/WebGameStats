@@ -56,7 +56,7 @@ app.UseAntiforgery();
 
 app.MapControllers();
 
-app.MapGet("/v1/identity/ping", () => Results.Ok("pong"));
+app.MapGet("/v1/game/ping", () => Results.Ok("pong"));
 
 if (app.Environment.IsDevelopment())
 {
