@@ -55,4 +55,11 @@ app.UseAntiforgery();
 
 app.MapControllers();
 
-await app.RunAsync(configuration["Server:Url"]);
+if (app.Environment.IsDevelopment())
+{
+    await app.RunAsync(configuration["Server:Url"]);
+}
+else
+{
+    await app.RunAsync();
+}
