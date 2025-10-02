@@ -9,7 +9,7 @@ internal class ProfileEndpoint(IUserService userService)
 {
     public override void Configure()
     {
-        Get("/v1/users/profile");
+        Get("/v1/identity/users/profile");
     }
     public override Task<IResult> ExecuteAsync(CancellationToken ct)
     {

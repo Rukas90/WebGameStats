@@ -12,7 +12,7 @@ internal class AuthInfoEndpoint(
 {
     public override void Configure()
     {
-        Get(routePatterns: "/v1/auth/info");
+        Get(routePatterns: "/v1/identity/auth/info");
         AllowAnonymous();
     }
     public override Task<IResult> ExecuteAsync(CancellationToken ct)

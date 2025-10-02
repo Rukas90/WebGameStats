@@ -68,7 +68,7 @@ internal class EmailConfirmationService(
             Scheme = context.Request.Scheme,
             Host   = context.Request.Host.Host,
             Port   = context.Request.Host.Port ?? -1,
-            Path   = "/v1/users/confirmEmail",
+            Path   = "/v1/identity/users/confirmEmail",
             Query  = $"userId={Uri.EscapeDataString(user.Id.ToString())}&code={Uri.EscapeDataString(code)}"
         };
         await senderService.SendMessage(

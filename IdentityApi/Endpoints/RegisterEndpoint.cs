@@ -15,7 +15,7 @@ internal class RegisterEndpoint(
 {
     public override void Configure()
     {
-        Post(routePatterns: "/v1/auth/register");
+        Post(routePatterns: "/v1/identity/auth/register");
         AllowAnonymous();
     }
     public override async Task<IResult> ExecuteAsync(

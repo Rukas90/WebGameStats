@@ -83,7 +83,7 @@ app.UseAuthorization();
 app.UseAntiforgeryFE();
 app.UseFastEndpoints();
 
-app.MapGet("/v1/ping", () => Results.Ok("pong"));
+app.MapGet("/v1/game/ping", () => Results.Ok("pong"));
 
 if (app.Environment.IsDevelopment())
 {

@@ -9,7 +9,7 @@ public class AntiforgeryEndpoint (
 {
     public override void Configure()
     {
-        Get(routePatterns: "/v1/csrf/token");
+        Get(routePatterns: "/v1/identity/csrf/token");
         AllowAnonymous();
     }
     public override Task<IResult> ExecuteAsync(CancellationToken ct)

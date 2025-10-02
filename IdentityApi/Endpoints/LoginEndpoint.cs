@@ -17,7 +17,7 @@ internal class LoginEndpoint(
 {
     public override void Configure()
     {
-        Post(routePatterns: "/v1/auth/login");
+        Post(routePatterns: "/v1/identity/auth/login");
         AllowAnonymous();
     }
     public override async Task<IResult> ExecuteAsync(

@@ -11,7 +11,7 @@ internal class ResendConfirmEmailEndpoint(
 {
     public override void Configure()
     {
-        Post(routePatterns: "/v1/users/confirmEmail/resend");
+        Post(routePatterns: "/v1/identity/users/confirmEmail/resend");
         EnableAntiforgery();
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)

@@ -8,7 +8,7 @@ internal class ConfirmEmailEndpoint(IEmailConfirmationService emailConfirmationS
 {
     public override void Configure()
     {
-        Get(routePatterns: "/v1/users/confirmEmail");
+        Get(routePatterns: "/v1/identity/users/confirmEmail");
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {

@@ -15,8 +15,18 @@
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/PingEndpoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/EmailConfirmationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/EmailConfirmationService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +367,7 @@
       <workItem from="1759249649898" duration="446000" />
       <workItem from="1759254488969" duration="368000" />
       <workItem from="1759414115046" duration="631000" />
-      <workItem from="1759415939623" duration="9392000" />
+      <workItem from="1759415939623" duration="9777000" />
     </task>
     <servers />
   </component>

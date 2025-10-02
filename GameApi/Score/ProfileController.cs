@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GameApi.Endpoints;
 
 [ApiController]
-[Route("v1/profile")]
+[Route("v1/game/profile")]
 public class ProfileController(IScoreService scoreService, IAntiforgery antiforgery) : ControllerBase
 {
     [Authorize]

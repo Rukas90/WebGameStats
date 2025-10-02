@@ -8,7 +8,7 @@ internal class LogoutEndpoint(IRefreshTokenService refreshTokenService)
 {
     public override void Configure()
     {
-        Post("/v1/auth/logout");
+        Post("/v1/identity/auth/logout");
         EnableAntiforgery();
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
