@@ -13,70 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/publish/BenjaminAbt.HCaptcha.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/BouncyCastle.Cryptography.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/DotNext.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/FastEndpoints.Attributes.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/FastEndpoints.Messaging.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/FastEndpoints.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/FluentResults.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/FluentValidation.DependencyInjectionExtensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/FluentValidation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/IdentityApi.staticwebassets.endpoints.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/LanguageExt.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/MailKit.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Authentication.Google.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.AspNetCore.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Caching.StackExchangeRedis.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/MimeKit.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Pipelines.Sockets.Unofficial.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Refit.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Scalar.AspNetCore.Microsoft.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/Scalar.AspNetCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/SoftFluent.EntityFrameworkCore.DataEncryption.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/StackExchange.Redis.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/System.IO.Hashing.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/ZiggyCreatures.FusionCache.Serialization.SystemTextJson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/ZiggyCreatures.FusionCache.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publish/web.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/GameApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/GameApi.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
@@ -140,6 +78,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1db095945646f1a37caa3b47b68d91881327b577fe8ae64ca80c90ab658d83/EndpointAntiforgeryStateProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1ea0722f8c9bbaab3e5d465d364dd217a3f22b5bc092643f8263eedcc1f68/ValidationResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f7d81c92c01349f8e68213d932e21041fa2083dc3c66e37a976b86d247666/ShouldBeBooleanExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/21cdabe3c57af632d6f4426ae92d2e2f8b26d7246dfa756cd37fca6cbacdd91/OpenApiEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23d24839d9b96d651f3e31225eeec7416b9ec2ede234e6d0f28da4d0f8d/JwtBearerExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24116c9a39d9274a98c16b9083d086948f901ce1289686d8da7a3886b19833f2/IdentityServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24dd1164ba47541cb1d3eb011e638e16953dbea3ae3f4dc208c3bbf3e96298a/ServiceCollectionServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -221,6 +160,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e81429fcb27641927891a68e1344b7b2ad226b7a6f9c6bd4474228d16efa8195/EmptyHttpResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ef162b8cab0848d4812bef7a16b7f54379f3de72b986b196c882dfbf9c56/ProblemHttpResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f16564c8c4b61e6ea398fe412680c6b795b266584ccf6a362aed712dc4d2b387/WebApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f42ccc977ee32a2a89eab8dbb018b9fe2d8dd0f9bb2da46986823ba63393a5/OpenApiConstants.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6f937e7fde51c3ca061c59112cdd35b76a72e9ef8821ac361c6ef71e90ea88/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9287c50e9bb33a371bfeaab47f38849daccaa5ba941c0e72b4070b95093f1/IdentityConstants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fc2027f7e776fc105cddb56b1a25eeb3895b3ae6f3aac854d786e63bd01f75e2/CallSiteFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -233,10 +173,10 @@
     <setting file="file://$PROJECT_DIR$/IdentityApi/Services/JwtService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Testing/ScoreUnitTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -263,6 +203,8 @@
     ".NET Project.Testing.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Azure - Web App.Publish IdentityApi to Azure (1).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -288,6 +230,36 @@
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.IdentityApi:http">
+    <configuration name="Publish IdentityApi to Azure (1)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="QuizGameStats" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="QuizGameStats" />
+      <method v="2" />
+    </configuration>
     <configuration name="Testing" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -393,6 +365,8 @@
       <item itemvalue=".NET Launch Settings Profile.IdentityApi:https" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: IIS Express" />
       <item itemvalue=".NET Project.Testing" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (1)" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -420,7 +394,9 @@
       <workItem from="1759249649898" duration="446000" />
       <workItem from="1759254488969" duration="368000" />
       <workItem from="1759414115046" duration="631000" />
-      <workItem from="1759415939623" duration="10661000" />
+      <workItem from="1759415939623" duration="12045000" />
+      <workItem from="1759432148454" duration="122000" />
+      <workItem from="1759432322183" duration="388000" />
     </task>
     <servers />
   </component>

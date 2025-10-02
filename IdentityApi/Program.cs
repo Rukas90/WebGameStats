@@ -71,7 +71,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseIncomingRequestLogger();
 }
-app.MapOpenApi();
+app.MapOpenApi(pattern: "/scalar");
 app.MapScalarApiReference();
 
 app.UseHttpsRedirection();
@@ -84,6 +84,7 @@ app.UseAntiforgeryFE();
 app.UseFastEndpoints();
 
 app.MapGet("/v1/identity/ping", () => Results.Ok("pong"));
+app.MapGet("/", () => Results.Ok("Identity Api is running"));
 
 if (app.Environment.IsDevelopment())
 {
