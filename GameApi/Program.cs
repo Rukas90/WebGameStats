@@ -56,7 +56,7 @@ app.UseAntiforgery();
 
 app.MapControllers();
 
-app.MapGet("/v1/game/ping", () => Results.Ok("pong"));
+app.MapGet("/ping", () => Results.Ok("pong"));
 app.MapGet("/", () => Results.Ok("Game Api is running"));
 
 if (app.Environment.IsDevelopment())

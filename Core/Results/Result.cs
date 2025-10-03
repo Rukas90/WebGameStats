@@ -24,10 +24,20 @@ public readonly record struct Result<TValue>
     public ProblemDetails Problem => !IsSuccess ? problem : throw new InvalidOperationException("Cannot get problem of successful result.");
     
     public TResult Match<TResult>(
-        Func<TValue, TResult>         onSuccess, 
-        Func<ProblemDetails, TResult> onFailure) =>
-        IsSuccess ? onSuccess(value) : onFailure(problem);
-    
+        Func<TValue, TResult> onSuccess, Func<ProblemDetails, TResult> onFailure) 
+        => IsSuccess ? onSuccess(value) : onFailure(problem);
+
+    public void Perform(Action onSuccess, Action onFailure)
+    {
+        if (IsSuccess)
+        {
+            onSuccess();
+        }
+        else
+        {
+            onFailure();
+        }
+    }
     public Result(TValue value)
     {
         this.value = value;

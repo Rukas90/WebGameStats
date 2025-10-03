@@ -23,7 +23,6 @@ internal class IPAddressService(ILogger<IPAddressService> logger) : IIPAddressSe
         var ip = ipSources.FirstOrDefault(ip => !string.IsNullOrEmpty(ip) && IsValidIP(ip));
         if (ip != null)
         {
-            logger.LogDebug("Client IP detected: {IP}", ip);
             return ip;
         }
         var fallbackIp = request.HttpContext.Connection.RemoteIpAddress?.ToString();

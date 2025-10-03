@@ -9,10 +9,16 @@ using IdentityApi.Models;
 using IdentityApi.Services;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Scalar.AspNetCore;
+using Serilog;
 using ZiggyCreatures.Caching.Fusion;
 using ZiggyCreatures.Caching.Fusion.Serialization.SystemTextJson;
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
 var builder       = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -41,8 +47,7 @@ builder.Services.AddFusionCache()
         options.Duration          = TimeSpan.FromMinutes(10);
         options.IsFailSafeEnabled = true;
     })
-    .WithSerializer(new FusionCacheSystemTextJsonSerializer())
-    .WithDistributedCache(new RedisCache(new RedisCacheOptions { Configuration = configuration["Redis:Configuration"] }));
+    .WithSerializer(new FusionCacheSystemTextJsonSerializer());
 
 builder.Services.AddAppServices<Program>();
 
@@ -65,30 +70,39 @@ builder.Services.AddDataProtection()
     .PersistKeysToFileSystem(new DirectoryInfo(path: "../SharedKeys"))
     .SetApplicationName("WebGameStats");
 
-var app = builder.Build();
+builder.Host.UseSerilog();
 
-if (app.Environment.IsDevelopment())
+try
 {
-    app.UseIncomingRequestLogger();
+    var app = builder.Build();
+
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseIncomingRequestLogger();
+    }
+    app.MapOpenApi();
+    app.MapScalarApiReference();
+
+    app.UseHttpsRedirection();
+    app.UseCors(policyName);
+
+    app.UseAuthentication();
+    app.UseAuthorization();
+
+    app.UseAntiforgeryFE();
+    app.UseFastEndpoints();
+
+    app.MapGet("/ping", () => Results.Ok("pong"));
+    app.MapGet("/",     () => Results.Ok("Identity Api is running"));
+    
+    if (app.Environment.IsDevelopment())
+    {
+        await app.RunAsync(configuration["Server:Url"]);
+        return;
+    }
+    await app.RunAsync();
 }
-app.MapOpenApi(pattern: "/scalar");
-app.MapScalarApiReference();
-
-app.UseHttpsRedirection();
-app.UseCors(policyName);
-
-app.UseAuthentication();
-app.UseAuthorization();
-
-app.UseAntiforgeryFE();
-app.UseFastEndpoints();
-
-app.MapGet("/v1/identity/ping", () => Results.Ok("pong"));
-app.MapGet("/", () => Results.Ok("Identity Api is running"));
-
-if (app.Environment.IsDevelopment())
+catch (Exception ex)
 {
-    await app.RunAsync(configuration["Server:Url"]);
-    return;
+    Console.WriteLine($"Startup failed: {ex.Message}");
 }
-await app.RunAsync();

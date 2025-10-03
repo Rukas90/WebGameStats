@@ -13,11 +13,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/master_GameApi.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/master_QuizGameStats.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/GameApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/GameApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Config/JwtConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/JwtConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Results/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Results/Result.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Utilities/JwtReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Utilities/JwtReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Utilities/ServicesConfigExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Utilities/ServicesConfigExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Responses/AuthStatusResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Responses/AuthStatusResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/EmailConfirmationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/EmailConfirmationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/HCaptchaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/HCaptchaService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/IPAddressService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/IPAddressService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/LoginService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/LoginService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/RegistrationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/RegistrationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/RolesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/RolesService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +133,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/60e16123dbae4c75961b99e3f63e7d8de8d1ddd13e7820a1236131ea3a6fd79/FusionCacheExtMethods_FactoryWithCtx_Sync.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/65cfb6c949e5fefc17badd7a981c3822fddc68802fdca4cac4f69c86a7b1382/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/682c82217cf64e09148df3cf2861f4a8594e79ec6c51024c45d55c243c9d5ce/Endpoint.Base.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6a1fb5a19c4883d19f63515be2d0cce5e0e9929bb30469a912a58ad2e1e6152/Uri.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6fa05d7dbf2e454ce78b261b422234da1f1ccedee678fd997e5ef4afe6df6e/ControllerBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/72e52c782daaa756deec1acf5e8c27ed9cebc3417facf14fba07ddf7cd/CommandExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76bb40a658eadce1eaa3283f4a21f651f45bc2c4c9a2e8b48ebe5817fc4628/IdentityEntityFrameworkBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -132,6 +155,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97ccd17e38fa33c8ab418df20d4ebd6168dc0d060d172da71ba6da922d97e48/ChallengeHttpResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/982c56fe1ec9e8531225b055c993e5a397994a3e75a54461814eec3ba180d2/AntiforgeryTokenSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/98e31c3f6ecff022e01ed9a79672c2e9d1a9c25d2dc1708c1f297150e0ceb55/LengthValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9b49fe0e211a107fbfaea5566b7a5fe58f27d4493b9207efd92bb5b5a3189/OkResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9ca954cb3859eeee5919191e171fb961118b2ed9a772cadad0ed107fdcd0b1cc/AsymmetricSignatureProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9f1781647ed95677a9897c4b6bccee2cc11cdd3223fe5c9413ed013313f466/MediatrServiceConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
@@ -203,7 +227,14 @@
     ".NET Project.Testing.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Azure - Web App.Publish GameApi to Azure.executor": "Run",
     "Azure - Web App.Publish IdentityApi to Azure (1).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (2).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (3).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (4).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (5).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (6).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (7).executor": "Run",
     "Azure - Web App.Publish IdentityApi to Azure.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -230,6 +261,21 @@
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.IdentityApi:http">
+    <configuration name="Publish GameApi to Azure" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/GameApi/GameApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="quiz-game" />
+      <method v="2" />
+    </configuration>
     <configuration name="Publish IdentityApi to Azure (1)" type="AzureWebAppDeploy">
       <option name="appServicePlanName" value="ASP-TestApp-b854" />
       <option name="appServicePlanResourceGroupName" value="TestApp" />
@@ -243,6 +289,96 @@
       <option name="resourceGroupName" value="TestApp" />
       <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
       <option name="webAppName" value="QuizGameStats" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure (2)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="QuizGameStats" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure (3)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="QuizGameStats" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure (4)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="TestLinuxApp" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure (5)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="QuizGameStats" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure (6)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="quiz-game-identity" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish IdentityApi to Azure (7)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="quiz-game-identity" />
       <method v="2" />
     </configuration>
     <configuration name="Publish IdentityApi to Azure" type="AzureWebAppDeploy">
@@ -365,8 +501,15 @@
       <item itemvalue=".NET Launch Settings Profile.IdentityApi:https" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: IIS Express" />
       <item itemvalue=".NET Project.Testing" />
+      <item itemvalue="Azure - Web App.Publish GameApi to Azure" />
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure" />
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (1)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (2)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (3)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (4)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (5)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (6)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (7)" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -396,7 +539,7 @@
       <workItem from="1759414115046" duration="631000" />
       <workItem from="1759415939623" duration="12045000" />
       <workItem from="1759432148454" duration="122000" />
-      <workItem from="1759432322183" duration="388000" />
+      <workItem from="1759432322183" duration="12450000" />
     </task>
     <servers />
   </component>

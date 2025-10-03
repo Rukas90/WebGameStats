@@ -31,7 +31,9 @@ internal interface IHCaptchaService
 }
 [AppService<IHCaptchaService>]
 internal class HCaptchaService(
-    HttpClient httpClient, IConfiguration configuration, ILogger<HCaptchaService> logger
+    HttpClient httpClient, 
+    IConfiguration configuration, 
+    ILogger<HCaptchaService> logger
 ): IHCaptchaService
 {
     private readonly string secretKey = configuration["HCaptcha:SecretKey"]!;
@@ -56,6 +58,7 @@ internal class HCaptchaService(
             
             if (!response.IsSuccessStatusCode)
             {
+                logger.LogError("HCaptcha failure. Status: {Code}", response.StatusCode);
                 return false;
             }
             var jsonResponse = await response.Content.ReadAsStringAsync();

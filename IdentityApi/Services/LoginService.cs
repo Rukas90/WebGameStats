@@ -14,9 +14,10 @@ internal interface ILoginService
 }
 [AppService<ILoginService>]
 internal class LoginService(
-    IAccountService      accountService,
-    IJwtService          jwtService,
-    IRefreshTokenService refreshTokenService) : ILoginService
+    IAccountService       accountService,
+    IJwtService           jwtService,
+    IRefreshTokenService  refreshTokenService,
+    ILogger<LoginService> logger) : ILoginService
 {
     public async Task<Result<TokensPairResponse>> LoginAsync(
         LoginCommand command, CancellationToken cancellationToken)
@@ -40,6 +41,7 @@ internal class LoginService(
         
         if (result.IsFailure)
         {
+            logger.LogWarning("Failed login attempt. Reason: {Details}.", result.Problem.Detail);
             return Failure.BadRequest("Invalid credentials");
         }
         var user = result.Value;
@@ -47,11 +49,8 @@ internal class LoginService(
         
         if (!validPassword)
         {
+            logger.LogWarning("Failed login attempt. Subject: {UserId}, Reason: {Details}.", user.Id, "Invalid password.");
             return Failure.BadRequest("Invalid credentials");
-        }
-        if (!await accountService.GetTwoFactorEnabledAsync(user))
-        {
-            return UserAuthValidationResult.Success(user);
         }
         return user;
     }

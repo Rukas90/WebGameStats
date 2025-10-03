@@ -7,10 +7,6 @@ public static class JwtReader
 {
     public static Result<Guid> GetUserId(ClaimsPrincipal principal)
     {
-        foreach (var c in principal.Claims)
-        {
-            Console.WriteLine(c);
-        }
         var claim = principal.FindFirst(ClaimTypes.NameIdentifier);
         
         if (claim == null)

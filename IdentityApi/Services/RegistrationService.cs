@@ -17,12 +17,13 @@ internal interface IRegistrationService
 }
 [AppService<IRegistrationService>]
 internal class RegistrationService(
-    IAccountService           accountService,
-    IUserStore<User>          userStore,
-    IEmailConfirmationService emailConfirmation,
-    IJwtService               jwtService,
-    IRefreshTokenService      refreshTokenService,
-    IRolesService             rolesService) : IRegistrationService
+    IAccountService              accountService,
+    IUserStore<User>             userStore,
+    IEmailConfirmationService    emailConfirmation,
+    IJwtService                  jwtService,
+    IRefreshTokenService         refreshTokenService,
+    IRolesService                rolesService,
+    ILogger<RegistrationService> logger) : IRegistrationService
 {
     public async Task<Result<TokensPairResponse>> RegisterAsync(
         RegisterCommand command, HttpContext context, CancellationToken cancellationToken)
@@ -40,6 +41,7 @@ internal class RegistrationService(
         
         if (!result.IsFailure)
         {
+            logger.LogError("Failed to create new user. Reason: {Details}", result.Problem.Detail);
             return result.Problem;
         }
         await rolesService.AddRoleToUserAsync(user, Constants.Roles.GUEST, cancellationToken);

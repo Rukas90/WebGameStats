@@ -14,7 +14,7 @@ internal class RefreshEndpoint(
 {
     public override void Configure()
     {
-        Post(routePatterns: "/v1/identity/auth/session/refresh");
+        Post(routePatterns: "/v1/auth/session/refresh");
         AllowAnonymous();
         EnableAntiforgery();
     }

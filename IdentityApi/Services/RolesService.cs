@@ -57,7 +57,7 @@ internal class RolesService(
         {
             foreach (var error in result.Errors)
             {
-                logger.LogWarning("Role creation error for '{Role}': {Error}", role, error.Description);
+                logger.LogError("Role creation error for '{Role}': {Error}", role, error.Description);
             }
         }
         return result.Succeeded;
