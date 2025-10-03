@@ -13,33 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/master_GameApi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/master_QuizGameStats.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Config/JwtConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Config/JwtConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Results/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Results/Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Utilities/JwtReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Utilities/JwtReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Utilities/ServicesConfigExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Utilities/ServicesConfigExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Responses/AuthStatusResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Responses/AuthStatusResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/EmailConfirmationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/EmailConfirmationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/HCaptchaService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/HCaptchaService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/IPAddressService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/IPAddressService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/LoginService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/LoginService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/RegistrationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/RegistrationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityApi/Services/RolesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Services/RolesService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,6 +210,7 @@
     "Azure - Web App.Publish IdentityApi to Azure (5).executor": "Run",
     "Azure - Web App.Publish IdentityApi to Azure (6).executor": "Run",
     "Azure - Web App.Publish IdentityApi to Azure (7).executor": "Run",
+    "Azure - Web App.Publish IdentityApi to Azure (8).executor": "Run",
     "Azure - Web App.Publish IdentityApi to Azure.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -381,6 +357,21 @@
       <option name="webAppName" value="quiz-game-identity" />
       <method v="2" />
     </configuration>
+    <configuration name="Publish IdentityApi to Azure (8)" type="AzureWebAppDeploy">
+      <option name="appServicePlanName" value="ASP-TestApp-b854" />
+      <option name="appServicePlanResourceGroupName" value="TestApp" />
+      <option name="operatingSystem" value="Linux" />
+      <option name="pricingSize" value="F1" />
+      <option name="pricingTier" value="Free" />
+      <option name="projectConfiguration" value="Release" />
+      <option name="projectPlatform" value="Any CPU" />
+      <option name="publishableProjectPath" value="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroupName" value="TestApp" />
+      <option name="subscriptionId" value="22e2dcb8-b302-4599-9205-e1c5051436bc" />
+      <option name="webAppName" value="quiz-game-identity" />
+      <method v="2" />
+    </configuration>
     <configuration name="Publish IdentityApi to Azure" type="AzureWebAppDeploy">
       <option name="appServicePlanName" value="ASP-TestApp-b854" />
       <option name="appServicePlanResourceGroupName" value="TestApp" />
@@ -510,6 +501,7 @@
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (5)" />
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (6)" />
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (7)" />
+      <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (8)" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -539,7 +531,7 @@
       <workItem from="1759414115046" duration="631000" />
       <workItem from="1759415939623" duration="12045000" />
       <workItem from="1759432148454" duration="122000" />
-      <workItem from="1759432322183" duration="12450000" />
+      <workItem from="1759432322183" duration="12858000" />
     </task>
     <servers />
   </component>
