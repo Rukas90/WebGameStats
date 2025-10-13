@@ -1,0 +1,60 @@
+2025-10-13 11:12:47.980 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-13 11:12:48.087 +03:00 [DBG] FUSION [N=FusionCache I=0HNGA615TTA5C]: setup serializer (SERIALIZER=ZiggyCreatures.Caching.Fusion.Serialization.SystemTextJson.FusionCacheSystemTextJsonSerializer)
+2025-10-13 11:12:48.137 +03:00 [INF] Registered 9 endpoints in 788 milliseconds.
+2025-10-13 11:12:48.144 +03:00 [DBG] Hosting starting
+2025-10-13 11:12:48.182 +03:00 [DBG] Reading data from file 'C:\Users\Rukas\RiderProjects\WebGameStats\SharedKeys\key-d05b47d2-7172-4c1a-b56e-e7574ffc5ef5.xml'.
+2025-10-13 11:12:48.200 +03:00 [DBG] Found key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5}.
+2025-10-13 11:12:48.211 +03:00 [DBG] Considering key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} with expiration date 2025-12-20 18:10:02Z as default key.
+2025-10-13 11:12:48.214 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-13 11:12:48.219 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-13 11:12:48.220 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-13 11:12:48.222 +03:00 [DBG] Using key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} as the default key.
+2025-10-13 11:12:48.223 +03:00 [DBG] Key ring with default key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} was loaded during application startup.
+2025-10-13 11:12:48.305 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-13 11:12:48.307 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-13 11:12:48.330 +03:00 [INF] Now listening on: http://127.0.0.1:5001
+2025-10-13 11:12:48.331 +03:00 [DBG] Loaded hosting startup assembly IdentityApi
+2025-10-13 11:12:48.332 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 11:12:48.333 +03:00 [INF] Hosting environment: Development
+2025-10-13 11:12:48.333 +03:00 [INF] Content root path: C:\Users\Rukas\RiderProjects\WebGameStats\IdentityApi
+2025-10-13 11:12:48.334 +03:00 [DBG] Hosting started
+2025-10-13 11:13:13.831 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-13 11:13:13.935 +03:00 [DBG] FUSION [N=FusionCache I=0HNGA61DKDRUN]: setup serializer (SERIALIZER=ZiggyCreatures.Caching.Fusion.Serialization.SystemTextJson.FusionCacheSystemTextJsonSerializer)
+2025-10-13 11:13:14.076 +03:00 [INF] Registered 9 endpoints in 864 milliseconds.
+2025-10-13 11:13:14.084 +03:00 [DBG] Hosting starting
+2025-10-13 11:13:14.112 +03:00 [DBG] Reading data from file 'C:\Users\Rukas\RiderProjects\WebGameStats\SharedKeys\key-d05b47d2-7172-4c1a-b56e-e7574ffc5ef5.xml'.
+2025-10-13 11:13:14.119 +03:00 [DBG] Found key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5}.
+2025-10-13 11:13:14.129 +03:00 [DBG] Considering key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} with expiration date 2025-12-20 18:10:02Z as default key.
+2025-10-13 11:13:14.131 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-13 11:13:14.137 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-13 11:13:14.138 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-13 11:13:14.140 +03:00 [DBG] Using key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} as the default key.
+2025-10-13 11:13:14.141 +03:00 [DBG] Key ring with default key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} was loaded during application startup.
+2025-10-13 11:13:14.220 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-13 11:13:14.222 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-13 11:13:14.242 +03:00 [INF] Now listening on: http://127.0.0.1:5001
+2025-10-13 11:13:14.242 +03:00 [DBG] Loaded hosting startup assembly IdentityApi
+2025-10-13 11:13:14.243 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 11:13:14.244 +03:00 [INF] Hosting environment: Development
+2025-10-13 11:13:14.244 +03:00 [INF] Content root path: C:\Users\Rukas\RiderProjects\WebGameStats\IdentityApi
+2025-10-13 11:13:14.245 +03:00 [DBG] Hosting started
+2025-10-13 11:14:51.511 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-13 11:14:51.600 +03:00 [DBG] FUSION [N=FusionCache I=0HNGA62ANR6TC]: setup serializer (SERIALIZER=ZiggyCreatures.Caching.Fusion.Serialization.SystemTextJson.FusionCacheSystemTextJsonSerializer)
+2025-10-13 11:14:51.646 +03:00 [INF] Registered 9 endpoints in 542 milliseconds.
+2025-10-13 11:14:51.653 +03:00 [DBG] Hosting starting
+2025-10-13 11:14:51.681 +03:00 [DBG] Reading data from file 'C:\Users\Rukas\RiderProjects\WebGameStats\SharedKeys\key-d05b47d2-7172-4c1a-b56e-e7574ffc5ef5.xml'.
+2025-10-13 11:14:51.688 +03:00 [DBG] Found key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5}.
+2025-10-13 11:14:51.698 +03:00 [DBG] Considering key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} with expiration date 2025-12-20 18:10:02Z as default key.
+2025-10-13 11:14:51.700 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-13 11:14:51.704 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-13 11:14:51.705 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-13 11:14:51.706 +03:00 [DBG] Using key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} as the default key.
+2025-10-13 11:14:51.708 +03:00 [DBG] Key ring with default key {d05b47d2-7172-4c1a-b56e-e7574ffc5ef5} was loaded during application startup.
+2025-10-13 11:14:51.764 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-13 11:14:51.766 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-13 11:14:51.784 +03:00 [INF] Now listening on: http://127.0.0.1:5001
+2025-10-13 11:14:51.785 +03:00 [DBG] Loaded hosting startup assembly IdentityApi
+2025-10-13 11:14:51.786 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 11:14:51.786 +03:00 [INF] Hosting environment: Development
+2025-10-13 11:14:51.787 +03:00 [INF] Content root path: C:\Users\Rukas\RiderProjects\WebGameStats\IdentityApi
+2025-10-13 11:14:51.788 +03:00 [DBG] Hosting started

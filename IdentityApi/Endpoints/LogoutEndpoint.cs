@@ -10,6 +10,7 @@ internal class LogoutEndpoint(IRefreshTokenService refreshTokenService)
     {
         Post("/v1/auth/logout");
         EnableAntiforgery();
+        Throttle(hitLimit: 60, durationSeconds: 240);
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {

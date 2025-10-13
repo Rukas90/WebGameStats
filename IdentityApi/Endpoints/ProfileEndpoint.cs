@@ -10,6 +10,7 @@ internal class ProfileEndpoint(IUserService userService)
     public override void Configure()
     {
         Get("/v1/users/profile");
+        Throttle(hitLimit: 120, durationSeconds: 120);
     }
     public override Task<IResult> ExecuteAsync(CancellationToken ct)
     {

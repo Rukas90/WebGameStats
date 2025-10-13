@@ -14,6 +14,7 @@ internal class AuthInfoEndpoint(
     {
         Get(routePatterns: "/v1/auth/info");
         AllowAnonymous();
+        Throttle(hitLimit: 360, durationSeconds: 60);
     }
     public override Task<IResult> ExecuteAsync(CancellationToken ct)
     {

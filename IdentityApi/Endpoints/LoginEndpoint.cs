@@ -19,6 +19,7 @@ internal class LoginEndpoint(
     {
         Post(routePatterns: "/v1/auth/login");
         AllowAnonymous();
+        Throttle(hitLimit: 60, durationSeconds: 240);
     }
     public override async Task<IResult> ExecuteAsync(
         LoginRequest request, CancellationToken ct)

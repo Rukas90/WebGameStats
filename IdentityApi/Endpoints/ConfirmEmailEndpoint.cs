@@ -13,6 +13,7 @@ internal class ConfirmEmailEndpoint(
     public override void Configure()
     {
         Get(routePatterns: "/v1/users/confirmEmail");
+        Throttle(hitLimit: 3, durationSeconds: 60);
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {

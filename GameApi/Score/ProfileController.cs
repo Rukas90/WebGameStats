@@ -5,11 +5,13 @@ using GameApi.Services.Score;
 using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace GameApi.Endpoints;
 
 [ApiController]
 [Route("v1/profile")]
+[EnableRateLimiting("fixed")]
 public class ProfileController(IScoreService scoreService, IAntiforgery antiforgery) : ControllerBase
 {
     [Authorize]

@@ -17,6 +17,7 @@ internal class RegisterEndpoint(
     {
         Post(routePatterns: "/v1/auth/register");
         AllowAnonymous();
+        Throttle(hitLimit: 60, durationSeconds: 240);
     }
     public override async Task<IResult> ExecuteAsync(
         RegisterRequest request, CancellationToken ct)

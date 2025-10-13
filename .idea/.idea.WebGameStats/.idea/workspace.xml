@@ -13,8 +13,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db667bfe-51dc-4291-aa00-eab7cbdf7e2c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameApi/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameApi/appsettings.json.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityApi/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityApi/appsettings.json.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityApi/logs/log20251013.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-secrets.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebGameStats/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/GameApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/GameApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameApi/Score/ProfileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AntiforgeryEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/AuthInfoEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ConfirmEmailEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LoginEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/LogoutEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ProfileEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RefreshEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/RegisterEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Endpoints/ResendConfirmEmailEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/IdentityApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGameStats.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebGameStats.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +136,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76bb40a658eadce1eaa3283f4a21f651f45bc2c4c9a2e8b48ebe5817fc4628/IdentityEntityFrameworkBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76d4427cd5623d878123796979f86bb772886627ecf9a579e2b61debbd43c2c/SHA256.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/79b4b5d07e8c5ac3de172b75667c6bded8e1fa6f42f36d8f6dc2f9e3d568/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7b710f6a0201548f1aee385dbfe20b7cdd629fb378894c7978f7ca5936a28/ConfigurationExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7cd5c2b34129c679757d73774749838069732e89a78ac285d916b7bb4df98c16/IdentityResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d382df578ec93391918cfaa4ce7f4b8f35c9aed1241d6556dc9be26df13c/IdentityUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/807a7fbe3c562c321aeba61c123987fe2c45828c2a8b8d0bb87bef5ac4cbeaa/UserSecretsConfigurationExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8296d36b22e8e614991e465edb588fca157e717308a2de59bee96d709212f8/MiddlewareExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83e72561796643cd854f9650d6f2630bf1e1aa55e743b15b6576ba85b2ee324/ValidationProblemDetails.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/83f3959e20d0785c3fa5d87b307c4d4db562aea7947c46644fd16367df8d/Mock.cs" root0="FORCE_HIGHLIGHTING" />
@@ -196,8 +220,8 @@
     ".NET Launch Settings Profile.Api: https.executor": "Run",
     ".NET Launch Settings Profile.Api:http.executor": "Debug",
     ".NET Launch Settings Profile.GameApi: http.executor": "Debug",
-    ".NET Launch Settings Profile.GameApi:http.executor": "Run",
-    ".NET Launch Settings Profile.IdentityApi:http.executor": "Run",
+    ".NET Launch Settings Profile.GameApi:http.executor": "Debug",
+    ".NET Launch Settings Profile.IdentityApi:http.executor": "Debug",
     ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
     ".NET Project.Testing.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -236,7 +260,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.IdentityApi:http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.GameApi:http">
     <configuration name="Publish GameApi to Azure" type="AzureWebAppDeploy">
       <option name="appServicePlanName" value="ASP-TestApp-b854" />
       <option name="appServicePlanResourceGroupName" value="TestApp" />
@@ -485,6 +509,71 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="GameApi/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="gameapi" />
+          <option name="containerName" value="gameapi" />
+          <option name="contextFolderPath" value="C:\Users\Rukas\RiderProjects\WebGameStats" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="GameApi/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IdentityApi/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="identityapi" />
+          <option name="containerName" value="identityapi" />
+          <option name="contextFolderPath" value="C:\Users\Rukas\RiderProjects\WebGameStats" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="IdentityApi/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.GameApi:http" />
       <item itemvalue=".NET Launch Settings Profile.GameApi:https" />
@@ -502,6 +591,9 @@
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (6)" />
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (7)" />
       <item itemvalue="Azure - Web App.Publish IdentityApi to Azure (8)" />
+      <item itemvalue="Docker.GameApi/Dockerfile" />
+      <item itemvalue="Docker.IdentityApi/Dockerfile" />
+      <item itemvalue="Docker.compose.yaml: Compose Deployment" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -531,7 +623,11 @@
       <workItem from="1759414115046" duration="631000" />
       <workItem from="1759415939623" duration="12045000" />
       <workItem from="1759432148454" duration="122000" />
-      <workItem from="1759432322183" duration="12858000" />
+      <workItem from="1759432322183" duration="14838000" />
+      <workItem from="1759586752902" duration="5578000" />
+      <workItem from="1759676072529" duration="6901000" />
+      <workItem from="1759835629903" duration="1211000" />
+      <workItem from="1760341706735" duration="1660000" />
     </task>
     <servers />
   </component>

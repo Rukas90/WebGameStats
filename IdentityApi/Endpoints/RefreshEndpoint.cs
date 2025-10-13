@@ -17,6 +17,7 @@ internal class RefreshEndpoint(
         Post(routePatterns: "/v1/auth/session/refresh");
         AllowAnonymous();
         EnableAntiforgery();
+        Throttle(hitLimit: 60, durationSeconds: 240);
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {

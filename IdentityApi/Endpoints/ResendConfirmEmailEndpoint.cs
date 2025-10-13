@@ -13,6 +13,7 @@ internal class ResendConfirmEmailEndpoint(
     {
         Post(routePatterns: "/v1/users/confirmEmail/resend");
         EnableAntiforgery();
+        Throttle(hitLimit: 1, durationSeconds: 120);
     }
     public override async Task<IResult> ExecuteAsync(CancellationToken ct)
     {

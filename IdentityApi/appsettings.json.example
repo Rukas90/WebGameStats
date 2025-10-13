@@ -1,0 +1,32 @@
+{
+  "Hosts": {
+    "Client": "http://127.0.0.1:5173"
+  },
+  "Server": {
+    "Url": "http://127.0.0.1:5001"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Information"
+    }
+  },
+  "Jwt": {
+    "Issuer": "http://127.0.0.1:5001/",
+    "Audience": "http://127.0.0.1:5173/"
+  },
+  "Cors": {
+    "AllowedOrigins": [
+      "http://localhost:5173/",
+      "http://127.0.0.1:5173/"
+    ]
+  },
+  "HCaptcha": {
+    "SiteKey": "12345678-1234-1234-1234-123456789000",
+    "VerificationUrl": "https://hcaptcha.com/siteverify"
+  },
+  "MailSender": {
+    "Port": 587,
+    "Host": "smtp.gmail.com"
+  }
+}

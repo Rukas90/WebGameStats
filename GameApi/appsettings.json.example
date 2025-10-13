@@ -1,0 +1,21 @@
+{
+  "Server": {
+    "Url": "http://127.0.0.1:5002"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Jwt": {
+    "Issuer": "http://127.0.0.1:80/",
+    "Audience": "http://127.0.0.1:5173/"
+  },
+  "Cors": {
+    "AllowedOrigins": [
+      "http://localhost:5173",
+      "http://127.0.0.1:5173"
+    ]
+  }
+}

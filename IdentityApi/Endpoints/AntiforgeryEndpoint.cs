@@ -11,6 +11,7 @@ public class AntiforgeryEndpoint (
     {
         Get(routePatterns: "/v1/csrf/token");
         AllowAnonymous();
+        Throttle(hitLimit: 120, durationSeconds: 360);
     }
     public override Task<IResult> ExecuteAsync(CancellationToken ct)
     {

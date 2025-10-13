@@ -20,7 +20,13 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
-var builder       = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
+
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddEnvironmentVariables();
+    builder.Configuration.AddUserSecrets<Program>();
+}
 var configuration = builder.Configuration;
 
 builder.Services.AddFastEndpoints();
@@ -56,7 +62,7 @@ builder.Services.Configure<HCaptchaSettings>(
 builder.Services.AddHttpClient<HCaptchaService>();
 
 builder.Services.AddDatabaseConfiguration<UserDbContext>
-    (configuration.GetConnectionString("mkdb")!);
+    (configuration.GetConnectionString("Default")!);
 
 builder.Services.AddIdentityCore<User>()
     .AddRoles<UserRole>()
@@ -97,12 +103,11 @@ try
     
     if (app.Environment.IsDevelopment())
     {
-        await app.RunAsync(configuration["Server:Url"]);
-        return;
+        await app.RunAsync(configuration["Server:Url"]); return;
     }
     await app.RunAsync();
 }
-catch (Exception ex)
+catch (Exception exception)
 {
-    Console.WriteLine($"Startup failed: {ex.Message}");
+    Console.WriteLine($"Startup failed: {exception.Message}");
 }

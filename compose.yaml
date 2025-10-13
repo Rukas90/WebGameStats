@@ -1,0 +1,22 @@
+﻿version: '3.8'
+
+services:
+  identity.api:
+    build:
+      context: .
+      dockerfile: IdentityApi/Dockerfile
+    ports:
+      - "5066:5066"
+      - "5067:5067"
+    environment:
+      - ASPNETCORE_URLS=https://+:5066
+
+  game.api:
+    build:
+      context: .
+      dockerfile: GameApi/Dockerfile
+    ports:
+      - "5056:5056"
+      - "5057:5057"
+    environment:
+      - ASPNETCORE_URLS=https://+:5056
